@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model PartyInvites.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Ответ</title>
+        <link rel="stylesheet" href="/css/StyleSheet.css"/>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
+    </head>
+    <body>
+        <div class="container mt-5 w-50">
+                 <form asp-action="RsvpForm" method="post">
+                       <div asp-validation-summary="All"></div>
+                       <div class="form-group">
+                       
+                            <label asp-for="Name">Ваше имя:</label>
+                            <input class="form-control" asp-for="Name" />                      
+                       
+                           <label asp-for="Email">Ваш эмайл:</label>
+                           <input class="form-control" asp-for="Email" />                       
+                       
+                            <label asp-for="Phone">Ваш телефон:</label>
+                            <input class="form-control" asp-for="Phone" />
+                       
+                            <label>Вы прийдете?:</label>
+                            <select class="form-control" asp-for="WillAtend">
+                                <option value="">Выберите вариант</option>
+                                <option value="true">Да, я буду</option>
+                                <option value="false">Нет, я не прийду</option>
+                            </select>
+                       </div>                      
+                       <button class="btn btn-primary mt-3" type="submit">Ответить</button>                                  
+                 </form>                 
+         </div>
+    </body>
+</html>
+

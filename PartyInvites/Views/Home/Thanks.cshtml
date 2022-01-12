@@ -1,0 +1,29 @@
+﻿@model PartyInvites.Models.GuestResponse
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Благодарность</title>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
+    </head>
+    <body>
+        <div class="container d-flex justify-content-center mt-3">
+            <div>
+                <h1>Спасибо, @Model.Name !</h1>
+                @if (Model.WillAtend == true)
+                {
+                    @:Здорово что вы присоеденитесь, выпивка уже на столе! 
+                }else{
+                    @:Жаль что вас не будет, нам будет вас не хватать на этом празднестве. 
+                }
+                <br />
+                Нажмите <a class="text-primary" asp-action="ListResponses">сюда</a> чтобы увидеть кто прийдет.
+            </div>
+        </div>
+    </body>
+</html>
