@@ -8,16 +8,20 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width" />
-        <title>Responsees</title>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
+        <title>Гости</title>
     </head>
     <body>
-        <h2>Here is t he list of people attending the party</h2>
-        <table>
+        <div class="container d-flex justify-content-center mt-3">
+            <h2 class="">Список людей принявших приглашение</h2>
+        </div>        
+        <div class="container">
+            <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
+                    <th class="col">Имя</th>
+                    <th class="col">Эмайл</th>
+                    <th class="col">Телефон</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,5 +35,9 @@
                 }
             </tbody>
         </table>
+        </div>       
+        <div class="container">
+            <a class="btn btn-primary" asp-action="Index">На главную</a>
+        </div>
     </body>
 </html>

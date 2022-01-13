@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
     </head>
     <body>
-        <div class="container d-flex justify-content-center mt-3">
+        <div class="m-5"></div>
+        <div class="container d-flex justify-content-center mt-5">
             <div>
                 <h1>Спасибо, @Model.Name !</h1>
                 @if (Model.WillAtend == true)
@@ -22,7 +23,7 @@
                     @:Жаль что вас не будет, нам будет вас не хватать на этом празднестве. 
                 }
                 <br />
-                Нажмите <a class="text-primary" asp-action="ListResponses">сюда</a> чтобы увидеть кто прийдет.
+                Нажмите <a class="alert-link" asp-action="ListResponses">сюда</a> чтобы увидеть кто прийдет.
             </div>
         </div>
     </body>
