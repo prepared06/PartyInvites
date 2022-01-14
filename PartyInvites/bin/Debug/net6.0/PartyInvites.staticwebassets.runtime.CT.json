@@ -7,19 +7,19 @@
     "Children": {
       "css": {
         "Children": {
-          "site.css": {
+          "BodyDesign.css": {
             "Children": null,
             "Asset": {
               "ContentRootIndex": 0,
-              "SubPath": "css/site.css"
+              "SubPath": "css/BodyDesign.css"
             },
             "Patterns": null
           },
-          "StyleSheet.css": {
+          "ErrorStyleSheet.css": {
             "Children": null,
             "Asset": {
               "ContentRootIndex": 0,
-              "SubPath": "css/StyleSheet.css"
+              "SubPath": "css/ErrorStyleSheet.css"
             },
             "Patterns": null
           }
@@ -33,6 +33,20 @@
           "ContentRootIndex": 0,
           "SubPath": "favicon.ico"
         },
+        "Patterns": null
+      },
+      "img": {
+        "Children": {
+          "background.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/background.jpg"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
         "Patterns": null
       },
       "js": {

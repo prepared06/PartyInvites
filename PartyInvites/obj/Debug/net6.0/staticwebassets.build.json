@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FsiKgHlgjLurBVXtYukwuJNZh+dkXXT4ujzGw0kpVwI=",
+  "Hash": "UUYdOp6XFIdy8pPlvELmJ/TTVcSsaGEOHmqcuWuZYnA=",
   "Source": "PartyInvites",
   "BasePath": "_content/PartyInvites",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PartyInvites.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\css\\BodyDesign.css",
       "SourceId": "PartyInvites",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\",
       "BasePath": "_content/PartyInvites",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/BodyDesign.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,15 +65,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\BodyDesign.css"
     },
     {
-      "Identity": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\css\\StyleSheet.css",
+      "Identity": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\css\\ErrorStyleSheet.css",
       "SourceId": "PartyInvites",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\",
       "BasePath": "_content/PartyInvites",
-      "RelativePath": "css/StyleSheet.css",
+      "RelativePath": "css/ErrorStyleSheet.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,7 +82,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
+      "OriginalItemSpec": "wwwroot\\css\\ErrorStyleSheet.css"
     },
     {
       "Identity": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\favicon.ico",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\img\\background.jpg",
+      "SourceId": "PartyInvites",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\",
+      "BasePath": "_content/PartyInvites",
+      "RelativePath": "img/background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\background.jpg"
     },
     {
       "Identity": "C:\\Users\\uswer\\source\\repos\\PartyInvites\\PartyInvites\\wwwroot\\js\\site.js",

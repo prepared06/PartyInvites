@@ -10,20 +10,21 @@
         <meta name="viewport" content="width=device-width" />
         <title>Благодарность</title>
         <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="~/css/BodyDesign.css" />
     </head>
     <body>
         <div class="m-5"></div>
-        <div class="container d-flex justify-content-center mt-5">
+        <div class="container d-flex justify-content-center mt-5 text-light shadow-text">
             <div>
                 <h1>Спасибо, @Model.Name !</h1>
                 @if (Model.WillAtend == true)
                 {
-                    @:Здорово что вы присоеденитесь, выпивка уже на столе! 
+                    <h3>Здорово что вы присоеденитесь, выпивка уже на столе! </h3>
                 }else{
-                    @:Жаль что вас не будет, нам будет вас не хватать на этом празднестве. 
+                    <h3>Жаль что вас не будет, нам будет вас не хватать на этом празднестве. </h3>
                 }
                 <br />
-                Нажмите <a class="alert-link" asp-action="ListResponses">сюда</a> чтобы увидеть кто прийдет.
+                <h3>Нажмите <a class="alert-link" asp-action="ListResponses" style="text-decoration: none;">сюда</a> чтобы увидеть кто прийдет.</h3>
             </div>
         </div>
     </body>

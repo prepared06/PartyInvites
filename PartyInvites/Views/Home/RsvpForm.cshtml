@@ -11,25 +11,26 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <title>Ответ</title>
-        <link rel="stylesheet" href="/css/StyleSheet.css"/>
+        <link rel="stylesheet" href="/css/ErrorStyleSheet.css"/>
         <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="~/css/BodyDesign.css" />
     </head>
     <body>
-        <div class="container mt-5 w-50">
+        <div class="container mt-5 w-50 text-light">
                  <form asp-action="RsvpForm" method="post">
                        <div asp-validation-summary="All"></div>
                        <div class="form-group">
                        
-                            <label asp-for="Name">Ваше имя:</label>
+                            <label asp-for="Name" class="shadow-text">Ваше имя:</label>
                             <input class="form-control" asp-for="Name" />                      
                        
-                           <label asp-for="Email">Ваш эмайл:</label>
+                           <label asp-for="Email" class="shadow-text">Ваш эмайл:</label>
                            <input class="form-control" asp-for="Email" />                       
                        
-                            <label asp-for="Phone">Ваш телефон:</label>
+                            <label asp-for="Phone" class="shadow-text">Ваш телефон:</label>
                             <input class="form-control" asp-for="Phone" />
                        
-                            <label>Вы прийдете?:</label>
+                            <label class="shadow-text">Вы прийдете?</label>
                             <select class="form-control" asp-for="WillAtend">
                                 <option value="">Выберите вариант</option>
                                 <option value="true">Да, я буду</option>

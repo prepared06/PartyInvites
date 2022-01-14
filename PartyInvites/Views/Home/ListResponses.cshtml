@@ -9,16 +9,17 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="~/css/BodyDesign.css" />
         <title>Гости</title>
     </head>
     <body>
         <div class="container d-flex justify-content-center mt-3">
-            <h2 class="">Список людей принявших приглашение</h2>
+            <h2 class="text-light shadow-text">Список людей принявших приглашение</h2>
         </div>        
         <div class="container">
             <table class="table table-bordered">
             <thead>
-                <tr>
+                <tr class="text-light shadow-text">
                     <th class="col">Имя</th>
                     <th class="col">Эмайл</th>
                     <th class="col">Телефон</th>
@@ -27,7 +28,7 @@
             <tbody>
                 @foreach(var r in Model)
                 {
-                    <tr>
+                    <tr class="text-light shadow-text">
                         <td>@r.Name</td>
                         <td>@r.Email</td>
                         <td>@r.Phone</td>
