@@ -1,10 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PartyInvites.Data;
 using PartyInvites.Models;
 
 namespace PartyInvites.Controllers
 {
     public class HomeController : Controller
     {
+        private ResponseContext _db;
+
+        public HomeController(ResponseContext db)
+        {
+            _db = db;
+        }
+        protected override void Dispose(bool disposing)
+        {
+            _db.Dispose();
+        }
         public ViewResult Index()
         {
             return View(new Party());
@@ -21,7 +32,8 @@ namespace PartyInvites.Controllers
         {
             if(ModelState.IsValid)
             {
-                Repository.AddResponse(guestResponse);
+                _db.GuestResponses.Add(guestResponse);
+                _db.SaveChanges();
                 return View("Thanks", guestResponse);
             }
             else
@@ -33,7 +45,8 @@ namespace PartyInvites.Controllers
 
         public ViewResult ListResponses()
         {
-            return View(Repository.Responses.Where(r => r.WillAtend == true));
+            var res = _db.GuestResponses.Where(r => r.WillAtend == true);          
+            return View(res);
         }
     }
 }
